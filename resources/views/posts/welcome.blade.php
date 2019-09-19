@@ -81,17 +81,15 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Hi <?php echo $name ?>
+                    Welcome
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+
+                  <a href="posts">Home</a>
+                  <a href="posts/viewallposts">View All Posts</a>
+                  <a href="posts/createnewposts">Create New Posts</a>
+
                 </div>
             </div>
         </div>

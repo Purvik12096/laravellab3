@@ -12,20 +12,27 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('posts/welcome');
 });
 
 Route::get('posts', function () {
-    $name='Purvik'; 
+    $name='Purvik';
 	return view('posts/welcome', compact('name'));
 });
 
 
 Route::get('posts/viewallposts', function () {
-	$posts=DB::table('posts')->get();
+	$posts=DB::table('tb_posts')->get();
 	return view('posts/viewallposts', compact('posts'));
 });
 
-Route::get('logout/', 'PostsController@logout'); 
+
+Route::get('posts/createnewposts', function () {
+	$posts=DB::table('tb_posts')->get();
+	return view('posts/createpost', compact('posts'));
+});
 
 
+Route::post('posts/store', 'PostsController@store');
+
+Route::get('logout/', 'PostsController@logout');
